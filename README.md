@@ -7,12 +7,11 @@ A playable atmospheric rendering experiment. A round little fantasy swordsman wi
 Requires Node.js **20.19+ or 22.12+**, npm, and a modern desktop browser with WebGL 2, hardware acceleration and `EXT_color_buffer_float`.
 
 ```bash
-cd plojspel
 npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite, usually **http://localhost:5173**. If your terminal is already inside `plojspel`, omit the first command.
+Run the commands from the repository root, then open the local URL printed by Vite, usually **http://localhost:5173**.
 
 ```bash
 npm run build       # TypeScript checks and production build
