@@ -50,7 +50,7 @@ try {
  await page.screenshot({path:'artifacts/sword-cut.png'});
  await page.keyboard.press('Escape');
  await page.waitForFunction(()=>!window.__FOGARENA__.playing);
- await page.getByRole('button',{name:'Settings',exact:false}).filter({hasText:'Settings'}).click();
+ await page.getByRole('button',{name:'02 Settings',exact:true}).filter({hasText:'Settings'}).click();
  await page.locator('#preset').selectOption('Dense Fog');
  await page.waitForFunction(()=>window.__FOGARENA__.settings.density===1.45);
  await page.locator('#wind').fill('1.5');await page.locator('#wind').dispatchEvent('input');
